@@ -172,7 +172,7 @@ namespace openxr_api_layer {
             m_needDeferredSwapchainReleaseQuirk = runtimeName.find("Varjo") != std::string::npos;
 
             // Game-specific quirks.
-            m_needFocusFovCorrectionQuirk = GetApplicationName() == "DCS World";
+            m_needFocusFovCorrectionQuirk = GetApplicationName() == "DCS World" || GetApplicationName() == "DCS";
 
             return XR_SUCCESS;
         }
